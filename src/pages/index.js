@@ -15,9 +15,9 @@ export default function IndexPage({land}) {
  const onPageChange = (page) => {
    setCurrentPage(page);
  };
- const MapWithNoSSR = dynamic(() => import("src/component/map"), {
+ const MapWithNoSSR = dynamic(() => import("../component/Map"), {
   ssr: false
-});
+})
  const paginatedPosts = paginate(land, currentPage, pageSize);
  if (status === 'loading') return <h1> loading... please wait</h1>;
  if (status === 'authenticated') {
