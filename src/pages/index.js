@@ -4,7 +4,7 @@ import Pagination from "../component/pagination";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { useSession, signIn, signOut } from 'next-auth/react';
-import {Map} from '../component/Map'
+
 
 export default function IndexPage({land}) {
   console.log("in index")
