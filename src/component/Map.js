@@ -20,17 +20,14 @@ const people = [
 
 
 export default function Map({ land }) {
-  console.log("in function")
-  console.log(land)
+  
   const [selected, setSelected] = useState(people[0])
   const position = [12.00712, 79.81010]
 
   const [query, setQuery] = useState('');
   const [village, setVillage] = useState('');
   const searchFilter = (array) => {
-    console.log("in search filter")
-    console.log(village)
-    return array.filter(
+      return array.filter(
 
       (el) => el.village.toLowerCase().includes(village)
     )
