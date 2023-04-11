@@ -14,7 +14,7 @@ export default function IndexPage({land}) {
  const onPageChange = (page) => {
    setCurrentPage(page);
  };
- const MapWithNoSSR = dynamic(() => import("src/component/map"), {
+ const MapWithNoSSR = dynamic(() => import("src/component/map.js"), {
   ssr: false
 });
  const paginatedPosts = paginate(land, currentPage, pageSize);
